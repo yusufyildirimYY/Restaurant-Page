@@ -1,0 +1,62 @@
+#bg {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(19, 8, 0, 0.9);
+}
+
+#homeContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  height: calc(100vh - 93px);
+}
+.homeText {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  z-index: 2;
+  text-align: center;
+  padding-inline: 8rem;
+  color: white;
+}
+
+.HeaderText {
+  font-size: 3.9rem;
+  text-align: left;
+  font-weight: 800;
+  line-height: 0.9;
+}
+.textDescription {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.menuButton {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+  font-size: 2rem;
+  background-color: rgb(231, 101, 9);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-weight: 900;
+  color: white;
+  outline: 0.3rem solid white;
+}
+#chefImg {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 40rem;
+  height: 40rem;
+  z-index: 2;
+}
