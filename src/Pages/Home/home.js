@@ -1,10 +1,10 @@
 import chefImage from "../../Images/chef.png";
+import render from "../../functions/clearContent";
+import menu from "../Menu/menu";
+
 import "./home.css";
 const home = () => {
   const content = document.getElementById("content");
-
-  const bg = document.createElement("div");
-  bg.id = "bg";
 
   const homeContent = document.createElement("div");
   homeContent.id = "homeContent";
@@ -26,7 +26,7 @@ const home = () => {
   btnContainer.className = "btnContainer";
 
   const menuButton = document.createElement("button");
-  menuButton.className = "menuButton";
+  menuButton.id = "menuBtn2";
   menuButton.textContent = "Our Menu";
 
   const chefImg = document.createElement("img");
@@ -34,16 +34,18 @@ const home = () => {
   chefImg.src = chefImage;
   chefImg.alt = "Chefs";
 
-  content.appendChild(bg);
   homeText.appendChild(headerText);
   homeText.appendChild(textDescription);
   btnContainer.appendChild(menuButton);
   homeText.appendChild(btnContainer);
   homeContent.appendChild(homeText);
   homeContent.appendChild(chefImg);
-  content.append(homeContent);
 
-  return content;
+  menuButton.addEventListener("click", () => {
+    render();
+    menu();
+  });
+  return content.appendChild(homeContent);
 };
 
 export default home;
