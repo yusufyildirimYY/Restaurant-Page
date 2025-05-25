@@ -7,7 +7,7 @@ const firstload = () => {
 
   body.appendChild(content);
   body.insertBefore(navbar(), body.firstChild);
-  // home();
+  home();
 };
 
 export default firstload;
