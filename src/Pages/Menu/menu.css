@@ -43,8 +43,9 @@
 
 .mealDescriptionL {
   grid-area: 2/3/3/8;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.764);
+  align-self: flex-start;
 }
 
 .mealR {
